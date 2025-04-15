@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 250px;
+        }
+        button {
+            padding: 8px 12px;
+        }
+        #output {
+            margin-top: 20px;
+        }
+        .entry {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Input and Display</h1>
+    <input type="text" id="userInput" placeholder="Enter some text..." />
+    <button onclick="addEntry()">Submit</button>
+    
+    <div id="output"></div>
+
+    <script>
+        function addEntry() {
+            const input = document.getElementById('userInput').value;
+            if (input) {
+                const outputDiv = document.getElementById('output');
+                const newEntry = document.createElement('div');
+                newEntry.textContent = input;
+                newEntry.className = 'entry';
+                outputDiv.appendChild(newEntry);
+                document.getElementById('userInput').value = '';  // Clear input field
+            }
+        }
+    </script>
+</body>
+</html>
