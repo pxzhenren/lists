@@ -3,6 +3,7 @@ function displayText() {
     const output = document.getElementById('formattedOutput');
     output.textContent = input;
 }
+
 async function submitText() {
     const output = document.getElementById('formattedOutput').textContent;
     await fetch('http://localhost:5000/submit', {
@@ -20,4 +21,13 @@ async function fetchOutputs() {
     const outputs = await response.json();
     const outputsList = document.getElementById('outputsList');
     outputsList.innerHTML = outputs.map(output => `<pre>${output.text}</pre>`).join('');
+}
+
+function copyOutput() {
+    const output = document.getElementById('formattedOutput');
+    navigator.clipboard.writeText(output.textContent).then(() => {
+        alert("Output copied to clipboard!");
+    }).catch(err => {
+        alert("Failed to copy: ", err);
+    });
 }
