@@ -1,0 +1,278 @@
+<body>
+    <div class="container">
+        <h1>List</h1>
+        <button onclick="copyText()">Tarot</button>
+    </div>
+
+    <script>
+        function copyText() {
+            // Block of text to be copied
+            const textToCopy = `无名牌 - 惊讶的喜事。
+梦 - 梦想成真的显化。
+井 - 困在卡顿的3D世界。
+花 - 会有好事显化，BBL。
+愚者（The Fool） - 正位：新的开始、冒险、天真。  
+
+愚者（The Fool） - 逆位：鲁莽、轻率、拖延。  
+
+魔术师（The Magician） - 正位：创造力、意志力、资源。  
+
+魔术师（The Magician） - 逆位：欺骗、操纵、缺乏方向。  
+
+女祭司（The High Priestess） - 正位：直觉、潜意识、神秘。  
+
+女祭司（The High Priestess） - 逆位：隐藏、忽视直觉、秘密。  
+
+皇后（The Empress） - 正位：丰饶、母性、自然。  
+
+皇后（The Empress） - 逆位：依赖、过度放纵、缺乏成长。  
+
+皇帝（The Emperor） - 正位：权威、结构、控制。  
+
+皇帝（The Emperor） - 逆位：专制、僵化、滥用权力。  
+
+教皇（The Hierophant） - 正位：传统、仪式、信仰。  
+
+教皇（The Hierophant） - 逆位：反叛、异端、自由思想。  
+
+恋人（The Lovers） - 正位：爱情、关系、选择。  
+
+恋人（The Lovers） - 逆位：冲突、分离、错误决定。  
+
+战车（The Chariot） - 正位：意志力、胜利、决心。  
+
+战车（The Chariot） - 逆位：失控、缺乏方向、失败。  
+
+力量（Strength） - 正位：勇气、内在力量、耐心。  
+
+力量（Strength） - 逆位：软弱、恐惧、滥用力量。  
+
+隐士（The Hermit） - 正位：内省、智慧、孤独。  
+
+隐士（The Hermit） - 逆位：孤立、过度谨慎、逃避。  
+
+命运之轮（Wheel of Fortune） - 正位：命运、变化、机会。  
+
+命运之轮（Wheel of Fortune） - 逆位：厄运、停滞、失控。  
+
+正义（Justice） - 正位：公平、平衡、法律。  
+
+正义（Justice） - 逆位：不公、偏见、错误判断。  
+
+倒吊人（The Hanged Man） - 正位：牺牲、新的视角、等待。  
+
+倒吊人（The Hanged Man） - 逆位：拖延、抗拒、无意义牺牲。  
+
+死神（Death） - 正位：结束、转变、重生。  
+
+死神（Death） - 逆位：抗拒改变、停滞、恐惧。  
+
+节制（Temperance） - 正位：平衡、调和、耐心。  
+
+节制（Temperance） - 逆位：失衡、过度、缺乏节制。  
+
+恶魔（The Devil） - 正位：束缚、欲望、物质主义。  
+
+恶魔（The Devil） - 逆位：解脱、释放、摆脱控制。  
+
+高塔（The Tower） - 正位：突然的变化、破坏、觉醒。  
+
+高塔（The Tower） - 逆位：抗拒改变、灾难、逃避。  
+
+星星（The Star） - 正位：希望、灵感、疗愈。  
+
+星星（The Star） - 逆位：失望、绝望、失去信心。  
+
+月亮（The Moon） - 正位：幻觉、恐惧、潜意识。  
+
+月亮（The Moon） - 逆位：清晰、真相、摆脱恐惧。  
+
+太阳（The Sun） - 正位：快乐、成功、活力。  
+
+太阳（The Sun） - 逆位：短暂成功、过度自信、挫折。  
+
+审判（Judgement） - 正位：重生、觉醒、评估。  
+
+审判（Judgement） - 逆位：拒绝改变、自责、延迟。  
+
+世界（The World） - 正位：完成、成就、旅行。  
+
+世界（The World） - 逆位：未完成、延迟、缺乏成就感。  
+
+权杖王牌（Ace of Wands） - 正位：新的开始、创造力、激情。  
+
+权杖王牌（Ace of Wands） - 逆位：延迟、缺乏动力、未实现潜力。  
+
+权杖二（Two of Wands） - 正位：计划、未来、决心。  
+
+权杖二（Two of Wands） - 逆位：犹豫、缺乏行动、计划失败。  
+
+权杖三（Three of Wands） - 正位：扩展、远见、合作。  
+
+权杖三（Three of Wands） - 逆位：延迟、挫折、缺乏远见。  
+
+权杖四（Four of Wands） - 正位：庆祝、稳定、家庭。  
+
+权杖四（Four of Wands） - 逆位：不稳定、缺乏庆祝、短暂成功。  
+
+权杖五（Five of Wands） - 正位：冲突、竞争、挑战。  
+
+权杖五（Five of Wands） - 逆位：避免冲突、和解、内部斗争。  
+
+权杖六（Six of Wands） - 正位：胜利、认可、成功。  
+
+权杖六（Six of Wands） - 逆位：失败、缺乏认可、骄傲。  
+
+权杖七（Seven of Wands） - 正位：防御、坚持、保护。  
+
+权杖七（Seven of Wands） - 逆位：放弃、退缩、过度防御。  
+
+权杖八（Eight of Wands） - 正位：速度、行动、消息。  
+
+权杖八（Eight of Wands） - 逆位：延迟、混乱、缺乏行动。  
+
+权杖九（Nine of Wands） - 正位：韧性、防御、准备。  
+
+权杖九（Nine of Wands） - 逆位：疲惫、脆弱、放弃。  
+
+权杖十（Ten of Wands） - 正位：负担、责任、压力。  
+
+权杖十（Ten of Wands） - 逆位：释放、减轻负担、逃避责任。  
+
+权杖侍从（Page of Wands） - 正位：热情、新想法、探索。  
+
+权杖侍从（Page of Wands） - 逆位：缺乏动力、拖延、不成熟。  
+
+权杖骑士（Knight of Wands） - 正位：冒险、能量、冲动。  
+
+权杖骑士（Knight of Wands） - 逆位：鲁莽、缺乏耐心、冲动行为。  
+
+权杖皇后（Queen of Wands） - 正位：自信、魅力、领导力。  
+
+权杖皇后（Queen of Wands） - 逆位：嫉妒、控制欲、缺乏自信。  
+
+权杖国王（King of Wands） - 正位：领导力、远见、决策。  
+
+权杖国王（King of Wands） - 逆位：专制、冲动、缺乏远见。  
+
+圣杯王牌（Ace of Cups） - 正位：爱、情感、新的关系。  
+
+圣杯王牌（Ace of Cups） - 逆位：情感波动、失落、缺乏爱。  
+
+圣杯二（Two of Cups） - 正位：合作、和谐、爱情。  
+
+圣杯二（Two of Cups） - 逆位：冲突、分离、误解。  
+
+圣杯三（Three of Cups） - 正位：庆祝、友谊、社交。  
+
+圣杯三（Three of Cups） - 逆位：过度放纵、孤立、冲突。  
+
+圣杯四（Four of Cups） - 正位：不满、反思、内省。  
+
+圣杯四（Four of Cups） - 逆位：新的机会、接受、摆脱不满。  
+
+圣杯五（Five of Cups） - 正位：失落、悲伤、后悔。  
+
+圣杯五（Five of Cups） - 逆位：接受、疗愈、新的希望。  
+
+圣杯六（Six of Cups） - 正位：怀旧、童年、礼物。  
+
+圣杯六（Six of Cups） - 逆位：活在过去、拒绝成长、依赖。  
+
+圣杯七（Seven of Cups） - 正位：选择、幻想、梦想。  
+
+圣杯七（Seven of Cups） - 逆位：混乱、不切实际、错误选择。  
+
+圣杯八（Eight of Cups） - 正位：放弃、探索、新的方向。  
+
+圣杯八（Eight of Cups） - 逆位：停滞、逃避、缺乏勇气。  
+
+圣杯九（Nine of Cups） - 正位：满足、愿望、幸福。  
+
+圣杯九（Nine of Cups） - 逆位：过度放纵、不满、短暂快乐。  
+
+圣杯十（Ten of Cups） - 正位：幸福、家庭、和谐。  
+
+圣杯十（Ten of Cups） - 逆位：家庭冲突、失落、缺乏幸福。  
+
+圣杯侍从（Page of Cups） - 正位：直觉、创意、新消息。  
+
+圣杯侍从（Page of Cups） - 逆位：情绪化、不成熟、虚假消息。  
+
+圣杯骑士（Knight of Cups） - 正位：浪漫、理想主义、追求。  
+
+圣杯骑士（Knight of Cups） - 逆位：不切实际、逃避、情绪化。  
+
+圣杯皇后（Queen of Cups） - 正位：同情、直觉、情感。  
+
+圣杯皇后（Queen of Cups） - 逆位：情绪化、依赖、缺乏同情。  
+
+圣杯国王（King of Cups） - 正位：情感控制、智慧、平衡。  
+
+圣杯国王（King of Cups） - 逆位：情绪失控、滥用权力、缺乏平衡。  
+
+宝剑王牌（Ace of Swords） - 正位：新的想法、清晰、胜利。  
+
+宝剑王牌（Ace of Swords） - 逆位：混乱、错误判断、冲突。  
+
+宝剑二（Two of Swords） - 正位：僵局、逃避、选择。  
+
+宝剑二（Two of Swords） - 逆位：决定、面对现实、解决冲突。  
+
+宝剑三（Three of Swords） - 正位：心碎、悲伤、分离。  
+
+宝剑三（Three of Swords） - 逆位：疗愈、接受、摆脱痛苦。  
+
+宝剑四（Four of Swords） - 正位：休息、恢复、内省。  
+
+宝剑四（Four of Swords） - 逆位：过度休息、逃避、缺乏行动。  
+
+宝剑五（Five of Swords） - 正位：冲突、自私、胜利。  
+
+宝剑五（Five of Swords） - 逆位：和解、妥协、避免冲突。  
+
+宝剑六（Six of Swords） - 正位：过渡、疗愈、前进。  
+
+宝剑六（Six of Swords） - 逆位：停滞、无法摆脱过去、延迟。  
+
+宝剑七（Seven of Swords） - 正位：欺骗、策略、秘密。  
+
+宝剑七（Seven of Swords） - 逆位：诚实、揭露、避免欺骗。  
+
+宝剑八（Eight of Swords） - 正位：限制、恐惧、无助。  
+
+宝剑八（Eight of Swords） - 逆位：解脱、面对恐惧、自由。  
+
+宝剑九（Nine of Swords） - 正位：焦虑、噩梦、恐惧。  
+
+宝剑九（Nine of Swords） - 逆位：摆脱恐惧、希望、疗愈。  
+
+宝剑十（Ten of Swords） - 正位：结束、痛苦、重生。  
+
+宝剑十（Ten of Swords） - 逆位：恢复、新的开始、摆脱痛苦。  
+
+宝剑侍从（Page of Swords） - 正位：好奇心、新想法、警觉。  
+
+宝剑侍从（Page of Swords） - 逆位：欺骗、不成熟、缺乏行动。  
+
+宝剑骑士（Knight of Swords） - 正位：行动、决心、冲动。  
+
+宝剑骑士（Knight of Swords） - 逆位：鲁莽、缺乏耐心、冲突。  
+
+宝剑皇后（Queen of Swords） - 正位：清晰、独立、智慧。  
+
+宝剑皇后（Queen of Swords） - 逆位：冷酷、无情、缺乏同情。  
+
+宝剑国王（King of Swords） - 正位：权威、逻辑、决策。  
+
+宝剑国王（King of Swords） - 逆位：专制、滥用权力、缺乏逻辑。
+`;
+            
+            // Use the Clipboard API to copy the text
+            navigator.clipboard.writeText(textToCopy).then(() => {
+                alert("Copied:\n" + textToCopy); // Alert user with confirmation
+            }).catch(err => {
+                alert("Failed to copy: " + err);
+            });
+        }
+    </script>
