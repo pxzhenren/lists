@@ -31,3 +31,11 @@ function copyOutput() {
         alert("Failed to copy: ", err);
     });
 }
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        alert("Copied: " + text);
+    }).catch(err => {
+        alert("Failed to copy: ", err);
+    });
+}

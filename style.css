@@ -15,24 +15,23 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-h1 {
-    text-align: center;
-    color: #4a4a4a;
+.static-text-box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f8f9fa; /* Light background for the box */
+    margin-top: 20px;
 }
 
-textarea {
-    width: 100%;
-    padding: 10px; /* Add padding inside the textarea */
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px; /* Rounded corners */
-    resize: vertical; /* Allow vertical resizing only */
+.text-item {
+    display: flex;
+    justify-content: space-between; /* Spacing between text and button */
+    align-items: center; /* Center items vertically */
+    margin: 5px 0; /* Space between items */
 }
 
 button {
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 5px 0; /* Add some margin between buttons */
+    padding: 5px 10px;
     background-color: #007bff; /* Button color */
     color: white;
     border: none;
@@ -43,18 +42,4 @@ button {
 
 button:hover {
     background-color: #0056b3; /* Darker shade on hover */
-}
-
-h2 {
-    margin-top: 20px;
-    color: #333;
-}
-
-pre {
-    background-color: #f8f9fa; /* Light background for output */
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    white-space: pre-wrap; /* Allow wrapping to fit the container */
-    word-wrap: break-word; /* Break long words */
 }
